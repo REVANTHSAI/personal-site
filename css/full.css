@@ -4,14 +4,13 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-
 .full {
-    position: fixed;
-    background: url('../img/notebook.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+position: fixed;
+background: url('../img/notebook.jpg') no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+background-size: cover;
+-o-background-size: cover;
 }
 
 .loader {
@@ -24,3 +23,10 @@
 	background: url('../img/Preloader_3.gif') 50% 50% no-repeat rgb(249,249,249);
     background-color: white;
 }
+
+#rev {
+    position:fixed;
+    left: 35%;
+    right: 60%;
+    top:50px
+    }
