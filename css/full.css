@@ -4,13 +4,14 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-.full {
+body {
 position: fixed;
 background: url('../img/notebook.jpg') no-repeat center center fixed;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 background-size: cover;
 -o-background-size: cover;
+    
 }
 
 .loader {
@@ -21,6 +22,7 @@ background-size: cover;
 	height: 100%;
 	z-index: 9999;
 	background: url('../img/Preloader_3.gif') 50% 50% no-repeat rgb(249,249,249);
+    padding:0;
     background-color: white;
 }
 
@@ -30,3 +32,19 @@ background-size: cover;
     right: 60%;
     top:50px
     }
+#name {
+    position: absolute;
+    margin: auto;
+    float: left;
+}
+#logo {
+    position: absolute;
+    background-size: cover;
+    width: 300px;    
+    height: 150px;
+    top:0px;
+    left:0px;
+}
+
+
+        
