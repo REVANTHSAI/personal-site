@@ -4,13 +4,14 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-body {
+ {
 position: fixed;
 background: url('../img/notebook.jpg') no-repeat center center fixed;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 background-size: cover;
 -o-background-size: cover;
+    left:0px; right:0px; top:0px; bottom:0px;
     
 }
 
@@ -37,14 +38,32 @@ background-size: cover;
     margin: auto;
     float: left;
 }
+
+
 #logo {
     position: absolute;
-    background-size: cover;
     width: 300px;    
     height: 150px;
     top:0px;
     left:0px;
 }
+#menubar{
+    position: fixed;
+    top:40px;
+    right:20px;
+}
+
+
+
+
+
+
+#rev:hover {
+    			-webkit-transform:scale(1.1); 
+-moz-transform:scale(1.1); 
+-o-transform:scale(1.1); 
+			}*/
+
 
 
         
