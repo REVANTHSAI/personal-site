@@ -3,12 +3,14 @@
 
 <head>
 
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
 
     <link rel="stylesheet">           
 
@@ -35,16 +37,60 @@
     
      <img src="img/name.png" class="img-responsive" id="logo" >
         
-    <img src="img/revface2.png"  class="img-responsive center-block"  id="rev" >
-    <img src="img/menubar.png" class="img-responsive" id="menubar">
+    <img src="img/revface.svg"  class="img-responsive center-block"  id="rev" >
     
         
     </div >
     
+    <div id="o-wrapper" class="o-wrapper">
+      
+        <img src="img/menubar.png" id="c-button--slide-right" >
+ 
+</div>   
     
-   
-    
-   
+   <nav id="c-menu--slide-right" class="c-menu c-menu--slide-right">
+  <button class="c-menu__close">Close Menu &rarr;</button>
+  <ul class="c-menu__items">
+    <li class="c-menu__item"><a href="#" class="c-menu__link">Home</a></li>
+    <li class="c-menu__item"><a href="#" class="c-menu__link">About</a></li>
+    <li class="c-menu__item"><a href="#" class="c-menu__link">Projects</a></li>
+    <li class="c-menu__item"><a href="#" class="c-menu__link">Resume</a></li>
+    <li class="c-menu__item"><a href="#" class="c-menu__link">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- /c-menu slide-right -->
+
+
+<div id="c-mask" class="c-mask"></div><!-- /c-mask -->
+
+<!-- menus script -->
+<script src="js/dist/menu.js"></script>
+<script>
+  
+
+  /**
+   * Slide right instantiation and action.
+   */
+  var slideRight = new Menu({
+    wrapper: '#o-wrapper',
+    type: 'slide-right',
+    menuOpenerClass: '.c-button',
+    maskId: '#c-mask'
+  });
+
+var slideRightBtn = document.querySelector('#c-button--slide-right');
+  
+  slideRightBtn.addEventListener('click', function(e) {
+    e.preventDefault;
+    slideRight.open();
+  });
+
+
+
+
+</script>
+
 
     
     
